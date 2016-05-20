@@ -1,4 +1,4 @@
 var css = require("../css/home.scss");
-var html = require("../index.html");
+var day1 = require("../index.html");
 
-document.write(html);
+document.write(day1);

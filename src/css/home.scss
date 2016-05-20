@@ -1,3 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+@import "base";
+
+
 body {
-	font-family: sans-serif;
+	background-image: url('https://images.unsplash.com/photo-1463123081488-789f998ac9c4?ixlib=rb-0.3.5&q=80&fm=jpg');
+	background-position: center;
+	background-size: cover;
+
+	font-family: 'Slabo 27px', serif;
+	color: #333;
 }
+
+$green: #004414;
+
+.container {
+	width: 900px;
+	max-width: 100%;
+	margin: 200px auto 0;
+	padding: 15px;
+}
+
+.box {
+	background: #fff;
+	padding: 30px;
+	width: 550px;
+	max-width: 100%;
+	border-radius: 10px;
+}
+
+.box__header {
+	margin-top: 0;
+	color: $green;
+}
+
