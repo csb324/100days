@@ -2,11 +2,25 @@
 
 	<div class="box">
 		<h1 class="box__header">Get recipes in your inbox every week</h1>
-		<form action="#">
-			<label for="email">
+
+		<form action="#" class="form">
+			<label class="form__label" for="email">
 				<span class="sr-only">Enter your Email</span>
-				<input type="email" name="email" placeholder="Enter your email">			
+				<input class="form__input" type="email" name="email" placeholder="Enter your email">
 			</label>
+			<label class="form__label" for="username">
+				<span class="sr-only">Choose a Username</span>
+				<input class="form__input" type="text" name="username" placeholder="Choose a username">
+			</label>
+			<label class="form__label" for="password">
+				<span class="sr-only">Choose a Password</span>
+				<input class="form__input" type="password" name="password" placeholder="Choose a password">
+			</label>
+
+			<button type="submit" class="form__submit">
+				Go!
+			</button>				
+
 		</form>
 	</div>
 
