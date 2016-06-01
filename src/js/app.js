@@ -1,4 +1,9 @@
-var css = require("../css/home.scss");
-var day1 = require("../index.html");
+var html = require("../html/menu.html");
+var $ = require("jquery");
 
-document.write(day1);
+document.write(html);
+
+
+$('.day-link').click(function() {
+	console.log("hi");
+});
