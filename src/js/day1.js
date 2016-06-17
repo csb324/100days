@@ -1,4 +1,6 @@
-var css = require("../css/day1.scss");
 var html = require("../html/day1.html");
+var $ = require("jquery");
+var css = require('../css/day1.scss');
 
-document.write(html);
+$('body').html(html)
+

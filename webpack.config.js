@@ -24,12 +24,12 @@ module.exports = {
 	    },
 			{
 				test: /\.scss$/,
-				loaders: ["style", "css", "sass"]
+				loader: "style/useable!css!sass"
 			},
 			{
 				test: /\.html$/,
         loader: "html?interpolate&attrs=false"
 			},
 		]
-	}
+	},
 }

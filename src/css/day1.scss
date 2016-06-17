@@ -3,8 +3,6 @@
 @import "base";
 
 
-
-
 $green: #004414;
 $lime: #D7DA8B;
 
@@ -142,4 +140,16 @@ body {
 	.form__submit {
 		right: 0;
 	}
+}
+
+.btn--back {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	background-color: #f2f2f2;
+	border-bottom: 3px solid #dedede;
+	color: $green;
+	display: inline-block;
+	padding: 5px;
+	text-decoration: none;
 }

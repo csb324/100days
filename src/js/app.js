@@ -1,9 +1,27 @@
-var html = require("../html/menu.html");
 var $ = require("jquery");
+var startingPage = 'menu';
+var css;
+var html;
 
-document.write(html);
+
+function renderPage(target) {
+	if (css) {
+		css.unuse();
+	}
+
+	html = require(`../html/${target}.html`);
+	css = require(`../css/${target}.scss`);
+	css.use();
+	$('body').html(html);
+}
 
 
-$('.day-link').click(function() {
-	console.log("hi");
+$(document).on('click', 'a', function() {
+	event.preventDefault();
+	var target = $(this).data('target');
+	renderPage(target);
 });
+
+
+renderPage(startingPage);
+
